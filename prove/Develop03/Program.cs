@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine("Hello Develop03 World!");
+        
 
         // Creates an instance of the Scripture class
         Scripture scripture = new Scripture();
