@@ -1,9 +1,15 @@
+// This is a practice space fro final project.
 using System;
 
-class Program
+namespace excercise1
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello Learning03 World!");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What is your favrotie color?");
+            string colorNew = Console.ReadLine();
+            Console.WriteLine($"You have entered {colorNew}");
+        }
     }
 }
