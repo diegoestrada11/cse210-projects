@@ -1,4 +1,5 @@
 using System;
+using System.Formats.Asn1;
 
 class Program
 {
@@ -10,21 +11,49 @@ class Program
 
         string letter = "";
 
-        if (percent >= 90)
+        if (percent >= 93)
         {
             letter = "A";
         }
-        else if (percent >= 80)
+        if (percent >= 90 && percent <= 92)
+        {
+            letter = "A-";
+        }
+        else if (percent >= 87 && percent <= 89)
+        {
+            letter = "B+";
+        }
+        else if (percent >= 83 && percent <= 86)
         {
             letter = "B";
         }
-        else if (percent >= 70)
+        else if (percent >= 80 && percent <= 82)
+        {
+            letter = "B-";
+        }
+        else if (percent >= 77 && percent <= 79)
+        {
+            letter = "C+";
+        }
+        else if (percent >= 73 && percent <= 76)
         {
             letter = "C";
         }
-        else if (percent >= 60)
+        else if (percent >= 70 && percent <= 72)
+        {
+            letter = "C-";
+        }
+        else if (percent >= 67 && percent <= 69)
+        {
+            letter = "D+";
+        }
+        else if (percent >= 63 && percent <= 66)
         {
             letter = "D";
+        }
+        else if (percent >= 60 && percent <= 62)
+        {
+            letter = "D-";
         }
         else
         {
